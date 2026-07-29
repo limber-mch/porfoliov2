@@ -37,6 +37,7 @@
     border-radius: 6px;
     transition: background 0.1s;
 }
+
 .navegacion a:hover {
     background-color: #f3ff4f;
 }
@@ -47,39 +48,55 @@
     text-align: center;
 }
 
-
-
-
 .contenido-principal {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
+
 .contenedor {
-    min-height: 300px; 
+    display: none; 
+    height: 100vh;
+    width: 100%;
     padding: 40px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.contenedor:target {
+    display: flex;
+}
+
+.contenedor:first-child {
+    display: flex;
+}
+
+.contenido-principal:has(:target) .contenedor:first-child {
+    display: none;
+}
+
+.contenido-principal:has(#inicio:target) #inicio {
+    display: flex;
+}
+
+
 .inicio {
-    background-color: #5feaff; /* Azul */
+    background-color: #5feaff;
 }
 
 .quiensoy {
-    background-color: #ffffff; /* Verde */
+    background-color: #ffffff;
 }
 
 .proyecto {
-    background-color: #5feaff; /* Naranja */
+    background-color: #5feaff;
 }
 
 .practicas {
-    background-color: #ffffff; /* Púrpura */
+    background-color: #ffffff;
 }
 
 .contacto {
-    background-color: #5feaff; /* Rojo */
+    background-color: #5feaff;
 }
