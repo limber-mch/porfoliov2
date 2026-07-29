@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Elms Sans", sans-serif;
+}
+
+.principal {
+    display: flex;
+    min-height: 100vh;
+}
+
+.navegacion {
+    width: 220px;
+    background-color: #69ff4f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.navegacion li {
+    margin-bottom: 15px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.1s;
+}
+.navegacion a:hover {
+    background-color: #f3ff4f;
+}
+
+.navegacion footer {
+    background-color: #61d0ff;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+
+
+.contenido-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor {
+    min-height: 300px; 
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio {
+    background-color: #5feaff; /* Azul */
+}
+
+.quiensoy {
+    background-color: #ffffff; /* Verde */
+}
+
+.proyecto {
+    background-color: #5feaff; /* Naranja */
+}
+
+.practicas {
+    background-color: #ffffff; /* Púrpura */
+}
+
+.contacto {
+    background-color: #5feaff; /* Rojo */
+}
