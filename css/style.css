@@ -471,11 +471,39 @@
 
 
 
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
 
+    .navegacion {
+        width: 100%;
+        min-height: auto;
+        padding: 15px;
+    }
 
+    .navegacion ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
 
+    .navegacion li {
+        margin-bottom: 0;
+    }
 
+    .navegacion a {
+        font-size: 0.95rem;
+        padding: 6px 10px;
+    }
 
+    .navegacion footer {
+        display: none;
+    }
 
-
-
+    .contenedor {
+        padding: 20px 15px;
+    }
+}
