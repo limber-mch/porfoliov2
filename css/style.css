@@ -367,7 +367,103 @@
 
 
 
+.contacto {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    color: #1a1a1a;
+}
 
+.contacto h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.contacto .subtitulo {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.contacto .linea {
+    width: 60px;
+    height: 3px;
+    background-color: #1a1a1a;
+    margin: 20px auto 30px auto;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario-contacto label {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    outline: none;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #1a1a1a;
+}
+
+.formulario-contacto .boton-enviar {
+    padding: 12px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.formulario-contacto .boton-enviar:hover {
+    opacity: 0.85;
+}
+
+.canales-directos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.canales-directos a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.canales-directos a:hover {
+    opacity: 0.7;
+}
+
+.canales-directos span {
+    color: rgba(0, 0, 0, 0.4);
+}
 
 
 
