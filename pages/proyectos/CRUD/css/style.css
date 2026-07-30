@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f3f3;
+    color: #000;
+    line-height: 1.6;
+}
+
+.section-form {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.formulario-usuario {
+    border-radius: 12px;
+}
+
+.form-data {
+    margin-bottom: 8px;
+}
+
+.form-data label {
+    display: block;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.form-data input,
+.form-data select,
+.form-data textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfdfe0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95em;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-data input:focus,
+.form-data select:focus,
+.form-data textarea:focus {
+    outline: none;
+}
+
+.form-data textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.form-actions button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.form-actions button[type="submit"] {
+    background-color: #3c9536;
+    color: #f2f4f7;
+}
+
+.form-actions button[type="submit"]:hover {
+    background-color: #63ba5d;
+}
+
+.form-actions button[type="reset"] {
+    background-color: #d7d7d7;
+    color: #666;
+}
+
+.form-actions button[type="reset"]:hover {
+    background-color: #e0e0e0;
+}
+
+.form-actions button:active {
+    transform: scale(0.98);
+}
+
+.section-usuarios {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#tablaUsuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tablaUsuarios thead {
+    background-color: #132966;
+}
+
+#tablaUsuarios th {
+    padding: 10px;
+    text-align: left;
+    color: #e4e4e4;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+#tablaUsuarios td {
+    padding: 2px 10px;
+    border-bottom: 1px solid #eeeeef;
+    font-size: 0.9em;
+}
+
+#tablaUsuarios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#tablaUsuarios tbody tr:hover {
+    background-color: #efeff0;
+}
+
+#tablaUsuarios button {
+    padding: 8px 15px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#tablaUsuarios button:first-child {
+    background-color: #359dff;
+    color: #fff;
+}
+
+#tablaUsuarios button:first-child:hover {
+    background-color: #1e77ca;
+}
+
+#tablaUsuarios button:last-child {
+    background-color: #dc5c69;
+    color: #fff;
+}
+
+#tablaUsuarios button:last-child:hover {
+    background-color: #c44a56;
+}
+
