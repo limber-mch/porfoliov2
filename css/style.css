@@ -14,11 +14,12 @@
 
 .navegacion {
     width: 220px;
-    background-color: #69ff4f;
+    background: linear-gradient(to bottom, #D5A64A, #AD7E20);
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #fff;
 }
 
 .navegacion ul {
@@ -36,10 +37,12 @@
     padding: 8px 12px;
     border-radius: 6px;
     transition: background 0.1s;
+    color: #f0e6c1;
 }
 
 .navegacion a:hover {
-    background-color: #f3ff4f;
+    background-color: #B98217;
+    color: #ffffff;
 }
 
 .principal:not(:has(.contenedor:target)) .navegacion a[href="#inicio"],
@@ -48,12 +51,12 @@
 .principal:has(#proyecto:target) .navegacion a[href="#proyecto"],
 .principal:has(#practicas:target) .navegacion a[href="#practicas"],
 .principal:has(#contacto:target) .navegacion a[href="#contacto"] {
-    background-color: #f3ff4f;
+    background-color: #996A0D;
     font-weight: bold;
+    color: #ffeac0;
 }
 
 .navegacion footer {
-    background-color: #61d0ff;
     font-size: 0.85rem;
     text-align: center;
 }
@@ -91,25 +94,29 @@
 }
 
 
-.inicio {
-    background-color: #5feaff;
+.seccion {
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
+}
+
+/* .inicio {
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
 }
 
 .quiensoy {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
 }
 
 .proyecto {
-    background-color: #5feaff;
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
 }
 
 .practicas {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
 }
 
 .contacto {
-    background-color: #5feaff;
-}
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
+} */
 
 
 
@@ -136,8 +143,8 @@
 
 .inicio .linea {
     width: 60%;
-    height: 3px;
-    background-color: #1576ff;
+    height: 1px;
+    background-color: #785911;
     margin: 20px auto;
 }
 
@@ -289,6 +296,7 @@
     width: 100%;
     text-align: center;
     color: #1a1a1a;
+    overflow-y: auto;
 }
 
 .practicas h2 {
@@ -507,3 +515,25 @@
         padding: 20px 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
