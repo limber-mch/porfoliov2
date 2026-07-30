@@ -473,11 +473,187 @@
     color: rgba(0, 0, 0, 0.4);
 }
 
+.notificacion-icono {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notificacion-icono svg {
+    color: #1a1a1a;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4444;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background: linear-gradient(to bottom, #E3C78F, #C8AD7A);
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #1a1a1a;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    opacity: 0.7;
+}
+
+.modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(80vh - 70px);
+}
+
+.contacto-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.contacto-item:last-child {
+    border-bottom: none;
+}
+
+.contacto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacto-item h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.contacto-item p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contacto-item .fecha {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 8px;
+}
+
+.contacto-item .mensaje {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.btn-eliminar {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.btn-eliminar:hover {
+    opacity: 0.8;
+}
+
+.sin-contactos {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+    font-size: 1rem;
+}
 
 
 
 
 
+
+
+@media (max-width: 1024px) {
+    .navegacion {
+        width: 180px;
+    }
+
+    .navegacion a {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+}
 
 @media (max-width: 768px) {
     .principal {
@@ -487,24 +663,47 @@
     .navegacion {
         width: 100%;
         min-height: auto;
-        padding: 15px;
+        padding: 12px 15px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navegacion h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     .navegacion ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 5px;
+        flex-wrap: nowrap;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navegacion ul::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .navegacion ul::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 2px;
     }
 
     .navegacion li {
         margin-bottom: 0;
+        flex-shrink: 0;
     }
 
     .navegacion a {
-        font-size: 0.95rem;
-        padding: 6px 10px;
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        white-space: nowrap;
     }
 
     .navegacion footer {
@@ -513,6 +712,26 @@
 
     .contenedor {
         padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacion {
+        padding: 10px 12px;
+    }
+
+    .navegacion h2 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .navegacion a {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .contenedor {
+        padding: 15px 12px;
     }
 }
 
