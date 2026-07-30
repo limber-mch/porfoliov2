@@ -270,3 +270,116 @@
 .enlace-proyecto:hover {
     opacity: 0.75;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.practicas {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.practicas h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.practicas .subtitulo {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.practicas .linea {
+    width: 60px;
+    height: 3px;
+    background-color: #1a1a1a;
+    margin: 20px auto 40px auto;
+}
+
+.lista-practicas {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.lista-practicas li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.enlace-practica {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: opacity 0.2s ease;
+}
+
+.enlace-practica:hover {
+    opacity: 0.75;
+}
+
+.lista-practicas .num {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.info-practica {
+    flex: 1;
+}
+
+.info-practica h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.info-practica p {
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
