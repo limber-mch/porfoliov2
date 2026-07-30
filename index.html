@@ -1,35 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Porfolio V2</title>
-</head>
-<body>
-    <div class="principal">
-        <nav class="navegacion">
-            <h2>INF113</h2>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quiensoy">Quien soy</a></li>
-                <li><a href="#proyecto">Proyectos</a></li>
-                <li><a href="#practicas">Prácticas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <footer>
-                <p>Un día a la vez.</p>
-            </footer>
-            
-            
-        </nav>
-        <section class="contenido-principal">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Porfolio V2</title>
+    </head>
+    <body>
+        <div class="principal">
+            <nav class="navegacion">
+                <h2>INF113</h2>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quiensoy">Quien soy</a></li>
+                    <li><a href="#proyecto">Proyectos</a></li>
+                    <li><a href="#practicas">Prácticas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <footer>
+                    <p>Un día a la vez.</p>
+                </footer>
+            </nav>
+            <section class="contenido-principal">
                 <div class="contenedor inicio" id="inicio">
                     <div class="inicio">
                         <h1>INF113</h1>
                         <p class="subtitulo">Proyecto Porfolio</p>
                         <div class="linea"></div>
-                        <p><strong>Docente:</strong> Lic. Edson Vladimir Sosa</p>
+                        <p>
+                            <strong>Docente:</strong> Lic. Edson Vladimir Sosa
+                        </p>
                         <p><strong>Estudiante:</strong> Limber Mamani Choque</p>
                     </div>
                 </div>
@@ -37,12 +37,18 @@
                     <div class="quiensoy">
                         <div class="quiensoy">
                             <h2>Quién Soy</h2>
-                            <p class="subtitulo">Estudiante de Primer Semestre</p>
+                            <p class="subtitulo">
+                                Estudiante de Primer Semestre
+                            </p>
                             <div class="linea"></div>
                             <p class="descripcion">
-                                Actualmente me encuentro cursando la materia de <strong>INF113</strong>. 
-                                Este sitio web fue creado con el objetivo de aplicar y demostrar mis conocimientos 
-                                fundamentales en desarrollo web utilizando <strong>HTML5</strong>, <strong>CSS3</strong> y <strong>JavaScript</strong>.
+                                Actualmente me encuentro cursando la materia de
+                                <strong>INF113</strong>. Este sitio web fue
+                                creado con el objetivo de aplicar y demostrar
+                                mis conocimientos fundamentales en desarrollo
+                                web utilizando <strong>HTML5</strong>,
+                                <strong>CSS3</strong> y
+                                <strong>JavaScript</strong>.
                             </p>
                         </div>
                     </div>
@@ -50,8 +56,68 @@
                 <div class="contenedor proyecto" id="proyecto">
                     <div class="proyecto">
                         <h2>Proyectos</h2>
+                        <p class="subtitulo">
+                            Trabajos desarrollados durante la materia
+                        </p>
+                        <div class="linea"></div>
+
+                        <ul class="lista-proyectos">
+                            <a href="" target="_blank" class="enlace-proyecto">
+                                <li>
+                                    <span class="num">01</span>
+                                    <img
+                                        src="img/miniatura/1.jpg"
+                                        alt="Porfolio V1"
+                                        class="miniatura"
+                                    />
+                                    <div class="info-proyecto">
+                                        <h3>Mi Porfolio</h3>
+                                        <p>
+                                            Web diseñada con HTML5, CSS3 y JavaScript, aplicando conocimientos adquiridos en la materia INF113.
+                                        </p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="" target="_blank" class="enlace-proyecto">
+                                <li>
+                                    <span class="num">02</span>
+                                    <img
+                                        src="img/miniatura/1.jpg"
+                                        alt="Porfolio V2"
+                                        class="miniatura"
+                                    />
+                                    <div class="info-proyecto">
+                                        <h3>CRUD LocalStorage</h3>
+                                        <p>
+                                            Pagina con operaciones CRUD (Crear, Leer, Actualizar y Eliminar) utilizando LocalStorage para almacenar los datos de manera local
+                                        </p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="" target="_blank" class="enlace-proyecto">
+                                <li>
+                                    <span class="num">03</span>
+                                    <img
+                                        src="img/miniatura/1.jpg"
+                                        alt="Calculadora JS"
+                                        class="miniatura"
+                                    />
+                                    <div class="info-proyecto">
+                                        <h3>3 en raya</h3>
+                                        <p>
+                                            Juego de 3 en raya desarrollado con HTML5, CSS3 y JavaScript, aplicando conocimientos adquiridos en la materia INF113.
+                                        </p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
                     </div>
                 </div>
+
+
+
+
+
                 <div class="contenedor practicas" id="practicas">
                     <div class="practicas">
                         <h2>Prácticas</h2>
@@ -63,6 +129,6 @@
                     </div>
                 </div>
             </section>
-    </div>
-</body>
+        </div>
+    </body>
 </html>
